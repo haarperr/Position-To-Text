@@ -23,7 +23,7 @@ RegisterServerEvent("SaveCoords")
 AddEventHandler("SaveCoords", function( PlayerName , x , y , z , h )
  file = io.open( PlayerName .. "-Coords.txt", "a")
     if file then
-        file:write("{" .. x .. "," .. y .. "," .. z .. "," .. h .. "}, \n")
+        file:write("{".. " x = ".. x .. ",".. " y = ".. y .. ",".." z = " .. z .. ",".." h = " .. h .. "}, \n")
     end
     file:close()
 end)
